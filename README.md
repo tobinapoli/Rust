@@ -1,39 +1,42 @@
-# Club SemRust - Sistema de Registro de Pagos y Gestión de Actividades en Blockchain
+<div style="background-color:#f4f4f4; padding:15px; border-radius:5px; font-family:monospace; white-space:pre-wrap;">
+<h1 style="font-size: 24px; font-weight: bold;">📌 Club SemRust - Payment Registration and Activity Management System on Blockchain</h1>
 
-## Descripción
-Este proyecto implementa un sistema en blockchain para el registro de pagos de cuotas mensuales y la gestión de actividades deportivas para los socios del Club SemRust. Lo hace mediante dos SmartContracts, uno principal para la funcionalidad del club y otro que genera reportes a traves de la infomracion del primero
+## 📝 Description
+This project implements a blockchain-based system for registering monthly membership payments and managing sports activities for the members of Club SemRust. It does so through two SmartContracts, one main contract for the club's functionality and another that generates reports using information from the first one.
 
-## Funcionalidades
-1. **Registro de un nuevo socio:**
-   - Al registrar un nuevo socio, se debe seleccionar la categoría correspondiente.
-   - Se crea un pago pendiente con vencimiento en los próximos 10 días.
+## 🚀 Features
+1. **New Member Registration:**
+   - When registering a new member, the corresponding category must be selected.
+   - A pending payment is created with a due date within the next 10 days.
 
-2. **Registro de un pago:**
-   - Los socios pueden realizar el pago de su cuota mensual indicando su número de identificación (DNI) y el monto pagado.
-   - El sistema verifica que el monto pagado corresponda a la categoría del socio y registra el pago en la blockchain.
+2. ** Payment Registration:**
+   - Members can make their monthly payment by providing their identification number (DNI) and the amount paid.
+   - The system verifies that the amount paid corresponds to the member's category and records the payment on the blockchain.
 
-3. **Consulta de pagos:**
-   - Se puede consultar la lista de pagos realizados, mostrando la información del socio, la categoría y el monto pagado.
+3. ** Payment Inquiry:**
+   - It is possible to check the list of completed payments, displaying the member's information, category, and amount paid.
 
-4. **Bonificación por pagos consecutivos:**
-   - Si un socio acumula un número determinado de pagos consecutivos sin atrasos, se otorga un descuento en la cuota mensual del siguiente mes.
+4. ** Bonus for Consecutive Payments:**
+   - If a member accumulates a certain number of consecutive on-time payments, a discount is granted for the next month's membership fee.
 
-## Reportes (a través de otro contrato)
-1. **Verificación de pagos pendientes:**
-   - Muestra un listado de socios morosos (con pagos pendientes después de la fecha de vencimiento).
+## 📊 Reports (through another contract)
+1. ** Pending Payments Verification:**
+   - Displays a list of delinquent members (with outstanding payments past the due date).
 
-2. **Informe de recaudación:**
-   - Genera un informe mensual con el total recaudado para cada categoría de socio.
+2. ** Revenue Report:**
+   - Generates a monthly report with the total revenue collected for each membership category.
 
-3. **Reporte de socios no morosos para una actividad específica:**
-   - Genera un reporte de los socios no morosos que tienen permitido asistir a una actividad deportiva específica.
+3. ** Non-Delinquent Members Report for a Specific Activity:**
+   - Generates a report of non-delinquent members who are allowed to attend a specific sports activity.
 
-## Contratos
-- Se maneja un listado de direcciones autorizadas para realizar operaciones.
-- El dueño del contrato puede autorizar o desautorizar direcciones.
-- Se puede activar o desactivar la política de autorización.
-- El dueño del contrato puede delegar el poder a otra dirección.
+## 🔐 Contracts
+- A list of authorized addresses is maintained to perform operations.
+- The contract owner can authorize or deauthorize addresses.
+- The authorization policy can be enabled or disabled.
+- The contract owner can delegate authority to another address.
 
-## Testing y Documentación
-- Testing realizado sobre todas las funcionalidades (coverage 85%).
-- Documentantacion de todos los structs y métodos.
+## ✅ Testing and Documentation
+- 🛠️ Testing performed on all functionalities (85% coverage).
+- 📚 Documentation provided for all structs and methods.
+</div>
+
